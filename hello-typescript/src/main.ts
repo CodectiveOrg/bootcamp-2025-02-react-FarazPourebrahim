@@ -1,3 +1,2 @@
-console.log("Hello, Faraz!");
-
+import "./reverse-array"
 
