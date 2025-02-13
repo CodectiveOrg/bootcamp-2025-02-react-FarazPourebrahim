@@ -19,6 +19,9 @@ export default function Toolbar(): ReactNode {
         suffixIcon={<MingcuteSearchLine />}
       />
         <Select options={options} />
+      <Button variant="solid" size="medium" shape="square">
+        <MingcuteMoonLine />
+      </Button>
     </div>
   );
 }
