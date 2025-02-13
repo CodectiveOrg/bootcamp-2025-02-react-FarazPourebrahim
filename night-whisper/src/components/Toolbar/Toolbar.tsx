@@ -18,7 +18,7 @@ export default function Toolbar(): ReactNode {
     <div className={styles.toolbar}>
       <TextInput
         className={styles.input}
-        placeholder="Search notes..."
+        placeholder="Search dreams..."
         suffixIcon={<MingcuteSearchLine />}
       />
       <Select options={options} />
