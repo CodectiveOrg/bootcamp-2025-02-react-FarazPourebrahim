@@ -1,11 +1,11 @@
 .header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    margin-block:2.5rem 1rem ;
+  margin-block: 2.5rem 1rem;
 
-    h1 {
-        font-weight: 500;
-        font-size: 1.5rem;
-    }
+  h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
 }
