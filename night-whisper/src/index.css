@@ -1,4 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-white: #f7f7f7;
+    --color-black: #252525;
+    --color-primary: #6c63ff;
+
+    --color-surface: var(--color-white);
+    --color-text: var(--color-black);
+
+    &.dark {
+        --color-text: var(--color-white);
+        --color-surface: var(--color-black);
+    }
+}
 
 html {
     font-family: "Kanit", system-ui;
+}
+
+input,
+label,
+textarea,
+select,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+    font: inherit;
+}
+
+body {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+
+    inline-size: min(45rem, 100% - 2rem);
+    margin-inline: auto;
 }
