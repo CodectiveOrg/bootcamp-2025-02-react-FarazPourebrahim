@@ -21,6 +21,7 @@
   }
 
   .suffix {
+    display: grid;
     color: var(--color-primary);
     font-size: 1.25rem;
   }
