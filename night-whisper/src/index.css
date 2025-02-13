@@ -1,28 +1,31 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --color-white: #f7f7f7;
-    --color-black: #252525;
-    --color-primary: #6c63ff;
+  --color-white: hsl(0, 0%, 97%);
+  --color-black: hsl(0, 0%, 15%);
+  --color-primary: hsl(243, 100%, 69%);
+  --color-primary-outline: hsl(243, 100%, 69%, 40%);
 
-    --color-surface: var(--color-white);
-    --color-text: var(--color-black);
+  --color-surface: var(--color-white);
+  --color-text: var(--color-black);
 
-    &.dark {
-        --color-text: var(--color-white);
-        --color-surface: var(--color-black);
-    }
+  &.dark {
+    --color-text: var(--color-white);
+    --color-surface: var(--color-black);
+  }
 }
 
 html {
-    font-family: "Kanit", system-ui;
+  font-family: "Kanit", system-ui;
+  caret-color: var(--color-primary);
+  accent-color: var(--color-primary);
 }
 
 input,
@@ -36,13 +39,13 @@ datalist,
 output,
 option,
 optgroup {
-    font: inherit;
+  font: inherit;
 }
 
 body {
-    background-color: var(--color-surface);
-    color: var(--color-text);
+  background-color: var(--color-surface);
+  color: var(--color-text);
 
-    inline-size: min(45rem, 100% - 2rem);
-    margin-inline: auto;
+  inline-size: min(45rem, 100% - 2rem);
+  margin-inline: auto;
 }
