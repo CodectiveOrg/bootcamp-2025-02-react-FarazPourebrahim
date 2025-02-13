@@ -1,4 +1,4 @@
-import {ComponentProps, ReactNode} from "react";
+import { ComponentProps, ReactNode } from "react";
 import styles from "./TextInput.module.css";
 
 type Props = ComponentProps<"input"> & {
@@ -8,11 +8,11 @@ type Props = ComponentProps<"input"> & {
 
 export default function TextInput({
   suffixIcon,
-    ...otherProps
+  ...otherProps
 }: Props): ReactNode {
   return (
     <div className={styles["text-input"]}>
-      <input type="text" {...otherProps}/>
+      <input type="text" {...otherProps} />
       <div className={styles.suffix}>{suffixIcon}</div>
     </div>
   );
