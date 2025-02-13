@@ -3,6 +3,7 @@ import styles from "./Create.module.css";
 import Button from "../Button/Button.tsx";
 import MingcuteAddLine from "../../icons/MingcuteAddLine.tsx";
 import TextInput from "../TextInput/TextInput.tsx";
+import TextArea from "../TextArea/TextArea.tsx";
 
 export default function Create(): ReactNode {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -24,6 +25,7 @@ export default function Create(): ReactNode {
         <div className={styles.content}>
           <div className={styles.title}>Create a New Dream</div>
           <TextInput placeholder="Input your title..." />
+          <TextArea />
           <div className={styles.actions}>
             <Button
               onClick={cancelButtonHandleClick}
