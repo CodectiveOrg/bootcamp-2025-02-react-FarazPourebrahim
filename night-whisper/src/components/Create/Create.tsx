@@ -4,6 +4,7 @@ import Button from "../Button/Button.tsx";
 import MingcuteAddLine from "../../icons/MingcuteAddLine.tsx";
 import TextInput from "../TextInput/TextInput.tsx";
 import TextArea from "../TextArea/TextArea.tsx";
+import DateInput from "../DateInput/DateInput.tsx";
 
 export default function Create(): ReactNode {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -26,6 +27,7 @@ export default function Create(): ReactNode {
           <div className={styles.title}>Create a New Dream</div>
           <TextInput placeholder="Input your title..." />
           <TextArea />
+          <DateInput />
           <div className={styles.actions}>
             <Button
               onClick={cancelButtonHandleClick}
