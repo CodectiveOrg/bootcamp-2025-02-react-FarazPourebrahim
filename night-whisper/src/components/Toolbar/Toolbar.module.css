@@ -1,8 +1,8 @@
 .toolbar {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 
-    .input {
-        flex: 1;
-    }
+  .input {
+    flex: 1;
+  }
 }
