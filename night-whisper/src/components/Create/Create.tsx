@@ -5,6 +5,7 @@ import MingcuteAddLine from "../../icons/MingcuteAddLine.tsx";
 import TextInput from "../TextInput/TextInput.tsx";
 import TextArea from "../TextArea/TextArea.tsx";
 import DateInput from "../DateInput/DateInput.tsx";
+import Select from "../Select/Select.tsx";
 
 export default function Create(): ReactNode {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -28,6 +29,13 @@ export default function Create(): ReactNode {
           <TextInput placeholder="Input your title..." />
           <TextArea />
           <DateInput />
+          <Select
+            options={[
+              { value: "good", label: "Good" },
+              { value: "bad", label: "Bad" },
+            ]}
+            variant="outlined"
+          />
           <div className={styles.actions}>
             <Button
               onClick={cancelButtonHandleClick}
