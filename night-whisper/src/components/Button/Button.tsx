@@ -6,6 +6,7 @@ type Color = "primary" | "danger";
 type Variant = "ghost" | "solid" | "outlined";
 type Size = "small" | "medium" | "large";
 type Shape = "circle" | "square" | "rectangle";
+
 type Props = ComponentProps<"button"> & {
   color?: Color;
   variant?: Variant;
